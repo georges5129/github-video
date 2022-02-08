@@ -1,0 +1,124 @@
+*{
+	margin: 0 0;
+	padding:0 0;
+	box-sizing: border-box;	
+	
+}
+html
+{
+	height: auto;
+}
+body{
+	height:auto;
+	width:100%;
+	background-image:url(pexels-ivan-babydov-7788875.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+.container{
+	max-width: 300px;
+	margin: auto;
+	margin-top: 100px;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+	border-radius: 20px;
+	padding: 40px;
+	color: #fff;
+	
+
+}
+h2
+{
+	color: white;
+	text-align:center;
+	text-transform: capitalize;
+}
+input
+{
+	width: 100%;
+	margin: 10px 0px;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	padding: 10px 6px;
+	font-size: 10px;
+	font-weight: bold;
+	box-sizing: border-box;
+	border:none;
+	border-bottom: 1px white solid;
+
+}
+#submit
+{
+	width:80%;
+	border-radius: 12px;
+	padding: 10px;
+	background-color: rgb(90,120,190);
+	color:white;
+	font-size: 10px;
+	font-weight: bold;
+	outline: none;
+	cursor: pointer;
+	margin: 30px 10px 0px :0px;
+}
+label
+{
+	display: none;
+}
+header
+{
+  height: auto;
+}
+header li
+{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.sous-menu
+{
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  width: 150px;
+}
+header li a
+{
+  padding: 10px;
+  display: block;
+  font-family: sans-serif;
+
+}
+header li a:hover
+{
+  background-color:black;
+  border-radius: 12px;
+}
+header li:hover .sous-menu
+{
+  display: block;
+}
+section{
+  padding: 10%;
+  height: auto;
+}
+h3,p{text-align: center;}
+a{
+  text-decoration: none;
+  color: white;
+}
+.container
+{
+  margin: 0 auto;
+  width: 450px;
+  margin-top: 50px;
+  margin-left: 40%;
+  padding-top:20px; 
+}
+.container1{
+	margin: 0 auto;
+	width: 450px;
+	margin-left: 55%;
+	padding-top:20px; 
+}

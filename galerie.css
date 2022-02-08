@@ -1,0 +1,300 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: 'lato';
+}
+.card{border-radius: 16px;
+	width: 350px;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0 5px 50px rgba(0,0,0,0.85);
+	margin: 20px;
+}
+#chien6 .img span{
+	background-image: url(chihuahua.jpg);
+}
+#chien5 .img span{
+	background-image: url(puppy-gd06f69dcd_1920.jpg);
+}
+#chien3 .img span{
+	background-image: url(pit-bull-g7e4ac82b0_1280.jpg);
+}
+#chien4 .img span{
+	background-image: url(boxer-600x450.jpg);
+}
+.card::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.92);
+}
+
+.card .img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.card .img span{
+	width: 25%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.card .img span:nth-child(1){
+	transition-delay:0;
+	background-position: 0;
+}
+.card .img span:nth-child(2){
+	transition-delay:0.1s;
+	background-position: 33.33%;
+}
+.card .img span:nth-child(3){
+	transition-delay:0.2s;
+	background-position: 66.66%;
+}
+.card .img span:nth-child(4){
+	transition-delay:0.3s;
+	background-position: 100%;
+}
+.card:hover .img > span{
+	transform: translateY(-100%);
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	padding: 20px 10px;
+	width: 100%;
+	height: 100%;
+	transform: translateY(100%);
+}
+.card:hover .content{
+	transform: translateY(0%);
+	transition: 1s;
+	transition-delay: 0.1s;
+}
+
+#chien1{
+	height:500px;
+	width: 90%;
+	display: flex; 
+}
+
+#chien2{
+	height:1000px;
+	width: 90%;
+	display: flex; 
+	padding-top: 300px;
+}
+#chien6{
+	margin-left:220px; 
+	margin-top: 300px;
+}
+#chien5{ 
+	margin-top: 300px;
+	margin-left: 100px;
+}
+#chien4{
+	margin-left: 218px;
+	position: absolute;
+	left: 480px;
+}
+#chien3{
+	margin-left: 100px;
+	position: absolute;
+	left:130px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.container1
+{
+  margin: 0 auto;
+  width: 450px;
+  margin-left: 55%;
+  padding-top:20px; 
+}
+header
+{
+  height: auto;
+  background-color:rgb(0,139,139);
+}
+header li
+{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.sous-menu
+{
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  width: 150px;
+}
+header li a
+{
+  padding: 10px;
+  display: block;
+  font-family: sans-serif;
+
+}
+header li a:hover
+{
+  background-color:black;
+  border-radius: 12px;
+}
+header li:hover .sous-menu
+{
+  display: block;
+}
+h3{
+  text-align: center;
+}
+section{
+  padding: 10%;
+  height: auto;
+  background-color: #264D59;
+}
+h3,p{text-align: center;}
+section{
+  padding: 10px;
+  height: auto;
+  background-color: #264D59;
+}
+footer{
+  margin-top: auto;
+  height: auto;
+  background-color:#2d2d2d;
+  color: white;
+  
+}
+#form3{
+  display: flex;
+  flex-direction: column;
+}
+label
+{
+  display: none;
+}
+#div1{
+  display: flex;
+  padding: 30px;
+}
+.form1{
+  padding: 5px;
+}
+#div2{
+
+  font-family:tahoma;
+  font-size: 30px;
+  text-align: center;
+}
+#div5{
+  padding-left: 20%;
+}
+#last1{
+  padding: 5px;
+}
+input{
+  width:370px;
+  height: 40px;
+  border:none;
+  border-radius: 2px;
+}
+.tous3{
+  
+  display: flex;
+  height: 5%;
+}
+.tous2{
+display: inline-block;
+padding: 70px;
+padding-left: 50px;
+margin-top: 0%;
+position: relative;
+}
+ul{
+  list-style: none;
+}
+#div6{
+  display: flex;
+  padding: 10px;
+padding-left: 50px;
+margin-top: 0%;
+}
+#div7{
+  padding-left:20%;
+  padding-top: 30px;
+  display: flex;
+}
+#div8{
+  padding-left: 25%;
+  text-align: center;
+}
+#button
+{
+  padding: 5px;
+  padding-left:3%;
+}
+button{
+  width: 750px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #e09900;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+#modal{
+  height: 300px;
+  width: 30%;
+  background-color: #ffffff;
+  font-family: helvertice;
+  text-align: center;
+  color: #95a5a6;
+  position: fixed;
+  top: -300px;
+  left: 35%;
+  transition-duration: 0.5s;
+}
+#modal h1
+{
+  padding-top: 60px;
+}
+.button_container{
+  width: 100%;
+  text-align: center;
+}
+.input{
+  border: 1px solid black;
+  margin: 5px;
+}
+#submit{
+  background-color: yellow;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.footer2{
+  position: absolute;
+}

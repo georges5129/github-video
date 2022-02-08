@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial">
+	<title>Document</title>
+	<meta http-equiv="X UA compatible" content="IE-edge">
+</head>
+<body>
+<h1 class="texte"> Salut je suis js</h1>
+<div class="mon-div">
+	
+</div>
+<style type="text/css">
+	.mon-div{width:400px;
+	height: 400px;
+	background-color: aqua;
+	transition-duration: 0.5s;  
+	}
+</style>
+<div id="div">
+	<h1>GENERATEUR DE CITATION</h1>
+	<p id="par"></p>
+</div>
+<div>
+<button id="button">Génerer</button>
+</div>
+<script type="text/javascript">
+	let monDiv=document.querySelector('.mon-div')
+	let rotation=0
+	monDiv.addEventListener('click' , function(){
+		rotation +=360
+		monDiv.style.transform='rotate('+rotation+'deg)'
+	})
+	let monTableau =['moi','georges','andre','yapi','mavoie']
+	let element=document.getElementById('div')
+	document.getElementById('button').onclick=function(){
+		element.innerHTML=monTableau[Math.floor(Math.random()*monTableau.length)-1]
+	}
+</script>
+</body>
+</html>
